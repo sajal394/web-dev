@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyframes and Animations</title>
+    <style>
+      .container {
+        background-color: yellow;
+      }
+      .box {
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        /* animation-name: sajal1; */
+        animation-name: sajal;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        /* animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-direction: reverse; */
+
+        /* These properties can be set in this shorthand */
+        /* animation: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-fill-mode; */
+        
+      }
+      @keyframes sajal {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+            top: 250px;
+            left: 0px;
+        }
+        75% {
+            top: 250px;
+            left: 250px;
+        }
+        100% {
+            top: 0px;
+            left: 250px;
+        }
+      }
+
+      @keyframes sajal1 {
+        from {
+          width: 200px;
+        }
+        to {
+          width: 1400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">This is a box</div>
+    </div>
+  </body>
+</html>

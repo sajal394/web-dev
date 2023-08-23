@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #af9fd7;
+      }
+      .container {
+        background-color: burlywood;
+        border: 3px solid rgb(30, 191, 172);
+        border-radius: 23px;
+        width: 530px;
+
+        /* We can set margin/ padding for top, bottom, left, right */
+
+        /* padding-top: 50px;
+            padding-bottom: 50px; 
+            padding-left: 35px;
+            padding-right: 35px;*/
+
+        /* margin-top: 5px;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            margin-right: 20px; */
+
+        /* margin: top right bottom left;*/
+        /* padding: top right bottom left;*/
+
+        /*padding: 25px 50px 75px 100px;  */
+        /*margin: 25px 50px 75px 100px;  */
+
+        /*padding: y(top/bottom) x(left/right) */
+        /*margin: y(top/bottom) x(left/right) */
+
+        padding: 35px 20px;
+        margin: 15px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur
+        voluptatem neque temporibus velit nihil ullam voluptate provident
+        officia labore.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur
+        voluptatem neque temporibus velit nihil ullam voluptate provident
+        officia labore.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur
+        voluptatem neque temporibus velit nihil ullam voluptate provident
+        officia labore.
+      </p>
+    </div>
+  </body>
+</html>

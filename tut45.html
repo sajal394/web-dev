@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navrbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      @media only screen and (max-width: 300px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        body {
+          background-color: gray;
+        }
+      }
+
+      @media (min-width: 500px) and (max-width: 800px) {
+        body {
+          background-color: blue;
+        }
+        .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          'navrbar navbar navbar navbar'
+          'section section section section'
+          'aside aside aside aside'
+          'footer footer footer footer';
+      }
+      }
+
+      @media (min-width: 800px) {
+        body {
+          background-color: cyan;
+        }
+      }
+      .bdr {
+        border: 2px solid black;
+        padding: 12px 23px;
+        background-color: wheat;
+      }
+
+      nav {
+        grid-area: navbar;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="bdr">Home About Contact</nav>
+      <section class="bdr">
+        <h2>Learn CSS</h2>
+      </section>
+      <aside class="bdr">
+        <h1>More About Us</h1>
+      </aside>
+    </div>
+    <footer class="bdr">Copyright | Sajal</footer>
+  </body>
+</html>

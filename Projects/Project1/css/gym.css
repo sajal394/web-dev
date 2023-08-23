@@ -1,0 +1,89 @@
+.left {
+  display: inline-block;
+
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.mid {
+  display: block;
+  width: 45%;
+  margin: 20px auto;
+}
+
+.right {
+  display: inline-block;
+
+  position: absolute;
+  right: 34px;
+  top: 20px;
+}
+.navbar {
+  display: inline-block;
+}
+.navbar li {
+  display: inline-block;
+  font-size: 25px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 34px;
+}
+.navbar li a:hover,
+.navbar li a:active {
+  text-decoration: underline;
+  color: grey;
+}
+.left img {
+  width: 100px;
+  /* filter: invert(50%); */
+}
+.left div {
+  text-align: center;
+  line-height: 12px;
+  font-size: 20px;
+  text-align: center;
+}
+.btn {
+  margin: 0px 10px;
+  color: white;
+  background-color: black;
+  padding: 5px 15px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: darkgray;
+}
+.container {
+  /* border: 2px solid white; */
+  margin: 135px 50px;
+  padding: 20px 75px;
+  width: 50%;
+  border-radius: 2px;
+  /* text-align: center; */
+}
+.form-group input {
+  text-align: center;
+  display: block;
+  width: 350px;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px auto;
+  font-family: "Ubuntu", sans-serif;
+}
+.container h1 {
+  text-align: center;
+}
+.container button {
+  display: block;
+  width: 25%;
+  margin: 35px auto;
+}

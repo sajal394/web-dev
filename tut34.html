@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+.container{
+    display: flex;
+}
+.card{
+    padding: 24px 12px;
+    margin: 24px 12px;
+    /* border: 2pz solid red; */
+    background-color: burlywood;
+    /* box-shadow: offset-x offset-y color; */
+    /* box-shadow: offset-x offset-y blur radius color; */
+    /* box-shadow: offset-x offset-y blur radius spread-radius color; */
+    
+
+    /* box-shadow: 7px 5px  gray;
+    box-shadow: 7px 5px 10px gray; */
+    /* box-shadow: 7px 5px 10px 5px rgba(50, 91, 133, 0.4); */
+    box-shadow: inset 3px 5px red;
+    box-shadow: 3px 5px red, 5px 10px green;
+
+    
+}
+.card h2 {
+    /* text-shadow: 2px 3px gray ; */
+    text-shadow: 2px 3px 2px gray ;
+}
+.card p{
+    text-shadow: 1px 1px gray;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsum ducimus nam eligendi laborum aspernatur in quidem quae error, quo rerum eveniet dolores, dolore sapiente voluptates aut debitis explicabo magni qui. Maxime nulla voluptatem aspernatur.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsum ducimus nam eligendi laborum aspernatur in quidem quae error, quo rerum eveniet dolores, dolore sapiente voluptates aut debitis explicabo magni qui. Maxime nulla voluptatem aspernatur.</p>
+
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsum ducimus nam eligendi laborum aspernatur in quidem quae error, quo rerum eveniet dolores, dolore sapiente voluptates aut debitis explicabo magni qui. Maxime nulla voluptatem aspernatur.</p>
+
+        </div>
+    </div>
+</body>
+</html>
